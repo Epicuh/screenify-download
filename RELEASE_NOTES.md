@@ -1,14 +1,15 @@
-## Screenify for Android 1.0.11
+## Screenify for Android 1.0.12
 
 Official release-signed Android build for connecting a phone to a Screenify display.
 
 ### Fixed
 
-- Fixed Android's `App not installed` error when upgrading from the earlier
-  development-signed Screenify APK.
-- Added a cryptographically verified signing-certificate lineage from the old
-  development identity to Screenify's permanent release identity.
-- Preserves installed Screenify app data during the authorized key transition.
+- Corrected the signing migration for Android 9 through Android 12L by retaining
+  the exact original signer on those platform versions.
+- Android 13 and newer use Screenify's permanent release signer with a
+  cryptographically verified lineage from the original signer.
+- Raised the Android version code to 13 to prevent a same-version update rejection.
+- Preserves installed Screenify app data across the authorized transition.
 
 ### Requirements
 
@@ -24,9 +25,10 @@ Official release-signed Android build for connecting a phone to a Screenify disp
 
 ### Verification
 
-- APK SHA-256: `115167DAC7DDA3D49CAC34EB911BAD4AA9D453A61A06F568D800E33BB4A10B38`
-- Signing certificate SHA-256: `91D68FB62E91ED14CF7A605113154BBE9FF85696B5CF50352CD518BFCB69FA70`
+- APK SHA-256: `AF0C0D0EF2E4BAC2475346E74506231CE78918A8EDACC2FCD6691BCBF5F05D68`
+- Android 9–12L signer SHA-256: `A7394529F660B0FBCEF43EE16F7823F582EE98C883E16BF8912426F9977FF297`
+- Android 13+ signer SHA-256: `91D68FB62E91ED14CF7A605113154BBE9FF85696B5CF50352CD518BFCB69FA70`
 
 Google Play Protect may still show a first-time caution while the independently
-distributed signing identity is new. Version 1.0.11 fixes the separate Android
-signature mismatch that caused installation to fail after approval.
+distributed signing identity is new. Version 1.0.12 fixes the separate Android
+platform compatibility issue that could cause installation to fail after approval.
