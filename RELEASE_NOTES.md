@@ -1,6 +1,14 @@
-## Screenify for Android 1.0.10
+## Screenify for Android 1.0.11
 
 Official release-signed Android build for connecting a phone to a Screenify display.
+
+### Fixed
+
+- Fixed Android's `App not installed` error when upgrading from the earlier
+  development-signed Screenify APK.
+- Added a cryptographically verified signing-certificate lineage from the old
+  development identity to Screenify's permanent release identity.
+- Preserves installed Screenify app data during the authorized key transition.
 
 ### Requirements
 
@@ -16,8 +24,9 @@ Official release-signed Android build for connecting a phone to a Screenify disp
 
 ### Verification
 
-- APK SHA-256: `B76D41C8C9E003056B6CB5A27D357452B4C63FF188BC3C2596AD155E2A55BC80`
+- APK SHA-256: `115167DAC7DDA3D49CAC34EB911BAD4AA9D453A61A06F568D800E33BB4A10B38`
 - Signing certificate SHA-256: `91D68FB62E91ED14CF7A605113154BBE9FF85696B5CF50352CD518BFCB69FA70`
 
-If an older debug-signed development APK is installed, Android may require it to
-be uninstalled before this release-signed build can be installed.
+Google Play Protect may still show a first-time caution while the independently
+distributed signing identity is new. Version 1.0.11 fixes the separate Android
+signature mismatch that caused installation to fail after approval.
