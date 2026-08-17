@@ -5,16 +5,16 @@ release assets for Screenify.
 
 ## Current release
 
-- Version: `1.0.13` (`versionCode 14`)
+- Version: `1.0.14` (`versionCode 15`)
 - Minimum Android version: Android 9 / API 28
-- APK SHA-256: `7CD1723BD523D21F73295F8F7C5440F12EE66DAE47EAD4629F4E93595829AC43`
+- APK SHA-256: `414319D877495D8F926E821C53F82ECC8B43A712E5FCE8CB51E0E1C4A3CAD16F`
 - Android 9–12L compatibility signer SHA-256: `A7394529F660B0FBCEF43EE16F7823F582EE98C883E16BF8912426F9977FF297`
 - Android 13+ release signer SHA-256: `91D68FB62E91ED14CF7A605113154BBE9FF85696B5CF50352CD518BFCB69FA70`
 
-Version 1.0.13 adds one-tap display connection with no device access code. It
-also uses Android's platform-targeted signing rotation: Android 9–12L receives
-the original signer for maximum update compatibility, while Android 13+ receives
-Screenify's permanent release signer and its verified certificate lineage.
+Version 1.0.14 replaces the beta visualizer's custom spectrum logic with an
+adapted CAVA-style FFT, automatic sensitivity, and gravity falloff. The display
+uses a GPU-rendered discrete LED matrix while preserving the one-tap connection
+flow and platform-targeted signing compatibility from version 1.0.13.
 
 The APK binary is distributed through GitHub Releases rather than committed to
 the repository.

@@ -1,16 +1,16 @@
-## Screenify for Android 1.0.13
+## Screenify for Android 1.0.14
 
 Official release-signed Android build for connecting a phone to a Screenify display.
 
 ### Changed
 
-- Connecting is now one tap: choose the Orange Pi from Find Device without
-  entering a device access code.
-- Increased the initial encrypted connection timeout so first-time TLS setup does
-  not report a false request failure.
-- The app pins the TLS certificate advertised by local device discovery.
-- Administrative actions such as updates, orientation, and Wi-Fi management
-  remain protected by the admin access code.
+- Replaced the beta visualizer's custom spectrum processor with a CAVA-inspired
+  dual-window FFT, logarithmic bands, automatic sensitivity, integral smoothing,
+  gravity falloff, and peak hold.
+- The Orange Pi now renders the spectrum as a GPU-driven, discrete OEM-style LED
+  matrix at the display refresh rate, including dim cells and the red reference row.
+- Added robust 2D fallback rendering for devices where WebGL is unavailable.
+- Preserved the one-tap display connection introduced in version 1.0.13.
 
 ### Requirements
 
@@ -26,10 +26,10 @@ Official release-signed Android build for connecting a phone to a Screenify disp
 
 ### Verification
 
-- APK SHA-256: `7CD1723BD523D21F73295F8F7C5440F12EE66DAE47EAD4629F4E93595829AC43`
+- APK SHA-256: `414319D877495D8F926E821C53F82ECC8B43A712E5FCE8CB51E0E1C4A3CAD16F`
 - Android 9–12L signer SHA-256: `A7394529F660B0FBCEF43EE16F7823F582EE98C883E16BF8912426F9977FF297`
 - Android 13+ signer SHA-256: `91D68FB62E91ED14CF7A605113154BBE9FF85696B5CF50352CD518BFCB69FA70`
 
 Google Play Protect may still show a first-time caution while the independently
-distributed signing identity is new. Version 1.0.13 retains the platform-targeted
+distributed signing identity is new. Version 1.0.14 retains the platform-targeted
 signing compatibility introduced in 1.0.12.
