@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "generatedAt": "2026-08-31T05:02:06.063Z",
+  "generatedAt": "2026-08-31T05:05:05.247Z",
   "releases": {
     "firmware": {
       "version": "1.1.4",
       "packagePath": "releases/firmware/screenify-firmware-1.1.4.tar.gz",
       "signaturePath": "releases/firmware/screenify-firmware-1.1.4.tar.gz.sig",
-      "sha256": "b5501d8a1f75ef5d6447531cd25705f42ffc9678b061e4912aafcb4b1c540a7f",
-      "size": 12209
+      "sha256": "351cdc7b934e00f6459f8837940c2d35f3db8a726c883c0441178b60d9aa3c7b",
+      "size": 12208
     }
   }
 }
