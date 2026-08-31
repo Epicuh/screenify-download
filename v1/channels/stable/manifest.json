@@ -1,14 +1,21 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "generatedAt": "2026-08-31T05:05:05.247Z",
+  "generatedAt": "2026-08-31T05:26:17.440Z",
   "releases": {
+    "app": {
+      "version": "2.1.41",
+      "packagePath": "releases/app/screenify-app-2.1.41.tar.gz",
+      "signaturePath": "releases/app/screenify-app-2.1.41.tar.gz.sig",
+      "sha256": "54ac54241eab2f974c16b33efe673456b7aa88fd95de47a734f70f731df8f269",
+      "size": 5495081
+    },
     "firmware": {
-      "version": "1.1.4",
-      "packagePath": "releases/firmware/screenify-firmware-1.1.4.tar.gz",
-      "signaturePath": "releases/firmware/screenify-firmware-1.1.4.tar.gz.sig",
-      "sha256": "351cdc7b934e00f6459f8837940c2d35f3db8a726c883c0441178b60d9aa3c7b",
-      "size": 12208
+      "version": "1.1.5",
+      "packagePath": "releases/firmware/screenify-firmware-1.1.5.tar.gz",
+      "signaturePath": "releases/firmware/screenify-firmware-1.1.5.tar.gz.sig",
+      "sha256": "5c0b411d6a45a8f6ddc0488d93fcfa01b6583ec9e21754747ca475243bb3e329",
+      "size": 12379
     }
   }
 }
